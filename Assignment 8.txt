@@ -1,0 +1,172 @@
+1.Program to check the sum of two pairs:
+java
+Copy code
+public class SumComparison {
+    public static void main(String[] args) {
+        int a = 5, b = 10, c = 7, d = 3;
+
+        if ((a + b) > (c + d)) {
+            System.out.println("The sum of a and b is greater than the sum of c and d.");
+        }
+    }
+}
+
+2.Program to check if a number is even:
+java
+Copy code
+public class EvenNumberCheck {
+    public static void main(String[] args) {
+        int num = 14;
+
+        if (num % 2 == 0) {
+            System.out.println(num + " is an even number.");
+        } else {
+            System.out.println(num + " is an odd number.");
+        }
+    }
+}
+
+3.Program to print characters from A to Z:
+java
+Copy code
+public class PrintAlphabet {
+    public static void main(String[] args) {
+        for (char ch = 'A'; ch <= 'Z'; ch++) {
+            System.out.print(ch + " ");
+        }
+    }
+}
+
+4.Program to swap two numbers:
+java
+Copy code
+import java.util.Scanner;
+
+public class SwapNumbers {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the first number: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Enter the second number: ");
+        int num2 = scanner.nextInt();
+
+        int temp = num1;
+        num1 = num2;
+        num2 = temp;
+
+        System.out.println("Swapped values: " + num1 + " and " + num2);
+    }
+}
+
+5.Program to check if a number is prime:
+java
+Copy code
+public class PrimeNumberCheck {
+    public static void main(String[] args) {
+        int num = 17;
+        boolean isPrime = true;
+
+        for (int i = 2; i <= num / 2; i++) {
+            if (num % i == 0) {
+                isPrime = false;
+                break;
+            }
+        }
+
+        if (isPrime) {
+            System.out.println(num + " is a prime number.");
+        } else {
+            System.out.println(num + " is not a prime number.");
+        }
+    }
+}
+
+6.Program to print the factorial of a given number:
+java
+Copy code
+import java.util.Scanner;
+
+public class Factorial {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int num = scanner.nextInt();
+
+        long factorial = 1;
+
+        for (int i = 1; i <= num; i++) {
+            factorial *= i;
+        }
+
+        System.out.println(num + "! = " + factorial);
+    }
+}
+
+7.Program to print the length of a string:
+java
+Copy code
+public class StringLength {
+    public static void main(String[] args) {
+        String msg = "Guvi Geek";
+        int length = msg.length();
+
+        System.out.println("Length of the string \"" + msg + "\" is: " + length);
+    }
+}
+
+8.Program to print a message 10 times:
+java
+Copy code
+public class PrintWelcome {
+    public static void main(String[] args) {
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Welcome to Guvi");
+        }
+    }
+}
+
+9.Program to check if a person is a senior citizen:
+java
+Copy code
+import java.util.Scanner;
+
+public class SeniorCitizenCheck {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter the age: ");
+        int age = scanner.nextInt();
+
+        if (age >= 60) {
+            System.out.println("Person is a senior citizen.");
+        } else {
+            System.out.println("Person is not a senior citizen.");
+        }
+    }
+}
+
+10.Program to count the number of digits in an integer:
+java
+Copy code
+import java.util.Scanner;
+
+public class CountDigits {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.print("Enter an integer: ");
+        long num = scanner.nextLong();
+
+        int count = 0;
+
+        while (num != 0) {
+            num /= 10;
+            count++;
+        }
+
+        System.out.println("Number of digits: " + count);
+    }
+}
